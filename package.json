@@ -2,9 +2,7 @@
   "name": "react-app",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
-  
-  "homepage": "/bummkids-reactapp/#",
+  "type": "module", 
   "scripts": {
     "dev": "vite",
     "build": "vite build",

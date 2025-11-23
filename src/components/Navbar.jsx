@@ -24,8 +24,8 @@ function ColorSchemesExample({ user, onLogout }) {
       <Container>
         <Navbar.Brand href="/">Bumm.kids</Navbar.Brand>
         <Nav className="me-auto d-flex w-100">
-          <Nav.Link href="/">Home</Nav.Link>
-          <Nav.Link href="/about">About</Nav.Link>
+          <Nav.Link href="#/">Home</Nav.Link>
+          <Nav.Link href="#/about">About</Nav.Link>
           <div className='ms-auto'>
             {user ? (
               <NavDropdown
@@ -44,8 +44,8 @@ function ColorSchemesExample({ user, onLogout }) {
                 }
                 id="user-profile-dropdown"
               >
-                <NavDropdown.Item href="/account">Profile</NavDropdown.Item>
-                <NavDropdown.Item href="/account-setting">Settings</NavDropdown.Item>
+                <NavDropdown.Item href="#/account">Profile</NavDropdown.Item>
+                <NavDropdown.Item href="#/account-setting">Settings</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item onClick={onLogout}>Logout</NavDropdown.Item>
               </NavDropdown>
