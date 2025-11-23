@@ -16,6 +16,7 @@
 // import Navbar from 'react-bootstrap/Navbar';
 // import Button from 'react-bootstrap/Button';
 import { Navbar, Nav, NavDropdown, Container, Image } from "react-bootstrap"
+// import { Link } from 'react-router-dom';
 
 function ColorSchemesExample({ user, onLogout }) {
   return (
@@ -23,7 +24,7 @@ function ColorSchemesExample({ user, onLogout }) {
       <Container>
         <Navbar.Brand href="/">Bumm.kids</Navbar.Brand>
         <Nav className="me-auto d-flex w-100">
-          <Nav.Link href="/">Home.</Nav.Link>
+          <Nav.Link href="/">Home</Nav.Link>
           <Nav.Link href="/about">About</Nav.Link>
           <div className='ms-auto'>
             {user ? (
@@ -49,7 +50,7 @@ function ColorSchemesExample({ user, onLogout }) {
                 <NavDropdown.Item onClick={onLogout}>Logout</NavDropdown.Item>
               </NavDropdown>
             ) : (
-              <Nav.Link href="login">Login</Nav.Link>
+              <Nav.Link href="#/login">Login</Nav.Link>
             )}
           </div>
 
