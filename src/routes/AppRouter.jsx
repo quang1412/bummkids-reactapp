@@ -13,7 +13,7 @@ import ProtectedRoute from "./ProtectedRoute"
 
 export default function AppRouter() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/bummkids-reactapp">
       <AuthProvider>
         <MainLayout>
           <Routes>

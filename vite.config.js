@@ -1,10 +1,17 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-// import tailwindcss from '@tailwindcss/vite'
 
 
-// https://vite.dev/config/
-export default defineConfig({
-  base: "/bummkids-reactapp/",
-  plugins: [react()],
+// https://vite.dev/config/ 
+export default defineConfig(({ command }) => {
+  const config = {
+    plugins: [react()],
+    base: '/',
+  }
+
+  if (command !== 'serve') {
+    config.base = '/bummkids-reactapp/'
+  }
+
+  return config
 })
